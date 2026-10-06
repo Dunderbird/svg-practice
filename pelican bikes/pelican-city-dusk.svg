@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <defs>
+    <linearGradient id="dusk5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff9a8b"/>
+      <stop offset="55%" stop-color="#ff6a88"/>
+      <stop offset="100%" stop-color="#ff99ac"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dusk sky -->
+  <rect width="640" height="480" fill="url(#dusk5)"/>
+
+  <!-- Sun disc -->
+  <circle cx="320" cy="300" r="90" fill="#ffd6a5"/>
+  <circle cx="320" cy="300" r="110" fill="#ffd6a5" opacity="0.25"/>
+
+  <!-- City skyline -->
+  <g fill="#5c3d5c">
+    <rect x="0" y="200" width="60" height="160"/>
+    <rect x="70" y="160" width="50" height="200"/>
+    <rect x="130" y="220" width="70" height="140"/>
+    <rect x="210" y="140" width="45" height="220"/>
+    <rect x="265" y="190" width="60" height="170"/>
+    <rect x="335" y="120" width="50" height="240"/>
+    <rect x="395" y="180" width="65" height="180"/>
+    <rect x="470" y="150" width="45" height="210"/>
+    <rect x="525" y="210" width="55" height="150"/>
+    <rect x="590" y="170" width="50" height="190"/>
+  </g>
+  <!-- Windows -->
+  <g fill="#ffe8b3" opacity="0.9">
+    <rect x="12" y="215" width="10" height="12"/><rect x="32" y="215" width="10" height="12"/>
+    <rect x="12" y="245" width="10" height="12"/><rect x="32" y="245" width="10" height="12"/>
+    <rect x="82" y="175" width="9" height="11"/><rect x="100" y="175" width="9" height="11"/>
+    <rect x="82" y="205" width="9" height="11"/><rect x="100" y="205" width="9" height="11"/>
+    <rect x="222" y="155" width="9" height="11"/><rect x="240" y="155" width="9" height="11"/>
+    <rect x="222" y="185" width="9" height="11"/><rect x="240" y="185" width="9" height="11"/>
+    <rect x="347" y="135" width="9" height="11"/><rect x="365" y="135" width="9" height="11"/>
+    <rect x="347" y="165" width="9" height="11"/><rect x="365" y="165" width="9" height="11"/>
+    <rect x="482" y="165" width="9" height="11"/><rect x="500" y="165" width="9" height="11"/>
+    <rect x="602" y="185" width="9" height="11"/><rect x="620" y="185" width="9" height="11"/>
+  </g>
+
+  <!-- Road -->
+  <rect y="360" width="640" height="120" fill="#3d3d5c"/>
+  <path d="M0 420 H640" stroke="#ffd6a5" stroke-width="4" stroke-dasharray="30 24"/>
+
+  <!-- Bike (flat geometric) -->
+  <g transform="translate(230, 330)">
+    <!-- Wheels -->
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#2b2b3d" stroke-width="8"/>
+    <circle cx="130" cy="0" r="46" fill="none" stroke="#2b2b3d" stroke-width="8"/>
+    <circle cx="0" cy="0" r="6" fill="#2b2b3d"/>
+    <circle cx="130" cy="0" r="6" fill="#2b2b3d"/>
+    <!-- Spokes as triangles -->
+    <path d="M0 -40 L8 0 L-8 0 Z M0 40 L8 0 L-8 0 Z M-40 0 L0 8 L0 -8 Z M40 0 L0 8 L0 -8 Z" fill="#8a8aa3"/>
+    <path d="M130 -40 L138 0 L122 0 Z M130 40 L138 0 L122 0 Z M90 0 L130 8 L130 -8 Z M170 0 L130 8 L130 -8 Z" fill="#8a8aa3"/>
+
+    <!-- Frame: bold triangles -->
+    <path d="M0 0 L55 -70 L130 0 Z" fill="none" stroke="#2ec4b6" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M55 -70 L55 -95" stroke="#2ec4b6" stroke-width="9" stroke-linecap="round"/>
+    <path d="M130 0 L118 -70" stroke="#2ec4b6" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- Handlebar -->
+    <path d="M118 -70 L140 -70 L140 -85" fill="none" stroke="#2b2b3d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M132 -85 h16" stroke="#ff6a88" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Seat -->
+    <path d="M40 -95 h30 l-6 8 h-18 Z" fill="#2b2b3d"/>
+
+    <!-- Crank + pedals -->
+    <circle cx="55" cy="-20" r="10" fill="none" stroke="#2b2b3d" stroke-width="5"/>
+    <path d="M55 -20 L70 -5 M55 -20 L40 -35" stroke="#2b2b3d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M64 -1 h14 M34 -40 h14" stroke="#ffd6a5" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican (flat geometric) -->
+  <g transform="translate(285, 215)">
+    <!-- Tail -->
+    <path d="M-40 -8 L-70 -22 L-44 0 L-70 14 L-38 6 Z" fill="#f4f1ea"/>
+
+    <!-- Body: rounded blob -->
+    <ellipse cx="0" cy="0" rx="48" ry="34" fill="#f4f1ea"/>
+    <ellipse cx="-6" cy="6" rx="34" ry="22" fill="#e8e4da"/>
+
+    <!-- Wing: bold shape -->
+    <path d="M-10 -12 Q-30 -40 6 -46 Q30 -30 16 -8 Q4 -4 -10 -12 Z" fill="#ffffff"/>
+    <path d="M-4 -20 Q-16 -34 4 -38" fill="none" stroke="#d8d4ca" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Neck -->
+    <path d="M30 -18 Q52 -34 46 -66 Q42 -76 30 -66 Q38 -40 24 -22 Z" fill="#f4f1ea"/>
+
+    <!-- Head -->
+    <circle cx="40" cy="-72" r="20" fill="#f4f1ea"/>
+
+    <!-- Beak: long triangle -->
+    <path d="M56 -78 L118 -72 L56 -64 Z" fill="#ff9f1c"/>
+    <path d="M56 -64 L112 -70 L56 -58 Z" fill="#ffb84d"/>
+    <!-- Pouch -->
+    <path d="M56 -64 Q84 -60 96 -66 Q90 -48 66 -46 Q56 -50 54 -58 Z" fill="#ffc971"/>
+
+    <!-- Eye -->
+    <circle cx="48" cy="-76" r="5" fill="#2b2b3d"/>
+    <circle cx="49.5" cy="-77.5" r="1.8" fill="#ffffff"/>
+
+    <!-- Crest -->
+    <path d="M28 -88 L24 -100 M36 -92 L34 -104" stroke="#d8d4ca" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Legs to pedals -->
+    <path d="M10 26 Q30 44 48 62" fill="none" stroke="#ff9f1c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-8 26 Q10 48 26 70" fill="none" stroke="#ff9f1c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M44 66 l14 4 M22 74 l14 4" stroke="#ff9f1c" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Speed lines -->
+  <g stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.7">
+    <path d="M60 250 H20"/>
+    <path d="M80 290 H30"/>
+    <path d="M55 330 H15"/>
+  </g>
+
+  <!-- Birds -->
+  <g fill="none" stroke="#5c3d5c" stroke-width="3" stroke-linecap="round">
+    <path d="M480 120 q7 -9 14 0 q7 -9 14 0"/>
+    <path d="M520 100 q6 -8 12 0 q6 -8 12 0"/>
+  </g>
+</svg>

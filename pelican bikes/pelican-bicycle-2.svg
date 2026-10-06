@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfe6f5"/>
+      <stop offset="100%" stop-color="#fdf6e3"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e6e6e6"/>
+    </linearGradient>
+    <linearGradient id="beakGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#f4841f"/>
+    </linearGradient>
+    <linearGradient id="pouchGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="100%" stop-color="#fb8500"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="500" height="400" fill="url(#sky2)"/>
+
+  <!-- Distant hills -->
+  <path d="M0 300 Q80 250 170 290 Q260 240 340 285 Q420 245 500 295 L500 400 L0 400 Z" fill="#a8d5a2" opacity="0.5"/>
+
+  <!-- Road -->
+  <path d="M0 335 L500 315 L500 400 L0 400 Z" fill="#8d8d8d"/>
+  <path d="M0 335 L500 315" stroke="#c0c0c0" stroke-width="3" stroke-dasharray="26 22"/>
+
+  <!-- Bicycle group -->
+  <g transform="translate(150, 265)">
+    <!-- Wheels -->
+    <g fill="none">
+      <circle cx="0" cy="0" r="48" stroke="#2b2b2b" stroke-width="5"/>
+      <circle cx="120" cy="0" r="48" stroke="#2b2b2b" stroke-width="5"/>
+    </g>
+    <!-- Spokes -->
+    <g stroke="#9a9a9a" stroke-width="1.2">
+      <path d="M0 -44 V44 M-44 0 H44 M-31 -31 L31 31 M-31 31 L31 -31 M-44 0 L0 -44 M0 44 L44 0 M-44 0 L0 44 M0 -44 L44 0"/>
+      <path d="M120 -44 V44 M76 0 H164 M89 -31 L151 31 M89 31 L151 -31 M76 0 L120 -44 M120 44 L164 0 M76 0 L120 44 M120 -44 L164 0"/>
+    </g>
+    <!-- Hubs -->
+    <circle cx="0" cy="0" r="6" fill="#555"/>
+    <circle cx="120" cy="0" r="6" fill="#555"/>
+
+    <!-- Frame -->
+    <g fill="none" stroke="#c0392b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0 L38 -60 L62 -60 L120 0"/>
+      <path d="M62 -60 L38 -60 L120 0"/>
+      <path d="M38 -60 L34 -86"/>
+    </g>
+
+    <!-- Fork + handlebars -->
+    <g fill="none" stroke="#c0392b" stroke-width="5" stroke-linecap="round">
+      <path d="M120 0 L108 -66 L118 -84"/>
+      <path d="M100 -84 Q118 -92 136 -84"/>
+    </g>
+
+    <!-- Saddle -->
+    <path d="M22 -88 Q34 -96 48 -88 Q34 -82 22 -88 Z" fill="#2b2b2b"/>
+
+    <!-- Chainring + crank -->
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#555" stroke-width="3"/>
+    <circle cx="62" cy="0" r="14" fill="none" stroke="#555" stroke-width="3"/>
+    <path d="M0 0 L10 -11 M62 0 L-10 11" stroke="#555" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Chain -->
+    <path d="M0 -12 H62 M0 12 H62" stroke="#777" stroke-width="2"/>
+
+    <!-- Kickstand -->
+    <path d="M38 -30 L30 42" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican -->
+  <g transform="translate(205, 128)">
+    <!-- Tail feathers -->
+    <path d="M-42 -6 Q-64 -14 -58 -26 Q-46 -20 -38 -10 Z" fill="#f0f0f0" stroke="#c9c9c9" stroke-width="1.5"/>
+    <path d="M-42 4 Q-64 2 -56 -10 Q-44 -6 -38 0 Z" fill="#f7f7f7" stroke="#c9c9c9" stroke-width="1.5"/>
+
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="46" ry="32" fill="url(#bodyGrad2)" stroke="#c9c9c9" stroke-width="2"/>
+
+    <!-- Wing -->
+    <path d="M-8 -12 Q-30 -38 -6 -48 Q10 -36 4 -16 Q-2 -10 -8 -12 Z" fill="#fbfbfb" stroke="#c9c9c9" stroke-width="1.5"/>
+    <path d="M-4 -20 Q-18 -34 -2 -40 M2 -22 Q-10 -32 2 -38" fill="none" stroke="#dcdcdc" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Neck -->
+    <path d="M28 -18 Q52 -34 44 -74 Q40 -84 26 -72 Q36 -38 22 -20 Z" fill="#f4f4f4" stroke="#c9c9c9" stroke-width="2"/>
+
+    <!-- Head -->
+    <ellipse cx="38" cy="-80" rx="20" ry="17" fill="#ffffff" stroke="#c9c9c9" stroke-width="2"/>
+
+    <!-- Crest feathers -->
+    <path d="M28 -94 Q31 -104 37 -96" fill="none" stroke="#d0d0d0" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M38 -98 Q41 -108 47 -100" fill="none" stroke="#d0d0d0" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M48 -96 Q52 -106 57 -98" fill="none" stroke="#d0d0d0" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Beak upper -->
+    <path d="M56 -84 Q92 -82 106 -84 Q92 -76 56 -76 Z" fill="url(#beakGrad2)" stroke="#d96f14" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Beak tip / hook -->
+    <path d="M106 -84 Q102 -78 96 -79" fill="#e07b12" stroke="#d96f14" stroke-width="1.5"/>
+
+    <!-- Throat pouch -->
+    <path d="M56 -76 Q88 -74 96 -79 Q94 -58 70 -54 Q56 -56 52 -68 Z" fill="url(#pouchGrad2)" stroke="#d96f14" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M60 -68 Q78 -64 92 -66" fill="none" stroke="#e08b1a" stroke-width="1.2" opacity="0.8"/>
+
+    <!-- Nostril -->
+    <circle cx="62" cy="-81" r="1.6" fill="#c96a10"/>
+
+    <!-- Eye -->
+    <circle cx="50" cy="-86" r="4.2" fill="#1f2430"/>
+    <circle cx="51.4" cy="-87.4" r="1.5" fill="#ffffff"/>
+
+    <!-- Legs reaching handlebars -->
+    <g fill="none" stroke="#f4841f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 22 Q40 44 56 62 L66 66"/>
+      <path d="M4 22 Q30 46 46 64 L56 70"/>
+    </g>
+    <!-- Toe grips -->
+    <g fill="none" stroke="#f4841f" stroke-width="3.4" stroke-linecap="round">
+      <path d="M56 62 Q64 56 72 60"/>
+      <path d="M46 64 Q54 58 62 62"/>
+    </g>
+  </g>
+
+  <!-- Motion streaks -->
+  <g stroke="#8ecae6" stroke-width="3" stroke-linecap="round" opacity="0.55">
+    <path d="M40 200 H12"/>
+    <path d="M52 232 H6"/>
+    <path d="M44 264 H14"/>
+    <path d="M96 184 H70"/>
+  </g>
+
+  <!-- Birdies -->
+  <g fill="none" stroke="#5b7c99" stroke-width="2" stroke-linecap="round">
+    <path d="M96 76 q5 -6 10 0 q5 -6 10 0"/>
+    <path d="M126 62 q4 -5 8 0 q4 -5 8 0"/>
+  </g>
+</svg>

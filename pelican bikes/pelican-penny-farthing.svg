@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <defs>
+    <linearGradient id="cobalt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b2d5c"/>
+      <stop offset="70%" stop-color="#4a3f78"/>
+      <stop offset="100%" stop-color="#6b4f8a"/>
+    </linearGradient>
+    <linearGradient id="wheelSheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8d8b0"/>
+      <stop offset="100%" stop-color="#8a7648"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9a3" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffe9a3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Night sky -->
+  <rect width="640" height="480" fill="url(#cobalt)"/>
+
+  <!-- Stars -->
+  <g fill="#fdf6d8">
+    <circle cx="60" cy="60" r="2"/>
+    <circle cx="140" cy="38" r="1.4"/>
+    <circle cx="230" cy="80" r="2.2"/>
+    <circle cx="330" cy="46" r="1.6"/>
+    <circle cx="420" cy="90" r="1.8"/>
+    <circle cx="540" cy="50" r="2.4"/>
+    <circle cx="600" cy="120" r="1.5"/>
+    <circle cx="90" cy="140" r="1.6"/>
+    <circle cx="480" cy="150" r="1.4"/>
+  </g>
+
+  <!-- Crescent moon -->
+  <path d="M575 60 a26 26 0 1 0 14 44 a20 20 0 1 1 -14 -44 Z" fill="#fdf3d0"/>
+
+  <!-- Gas lamps -->
+  <g>
+    <circle cx="80" cy="180" r="60" fill="url(#lampGlow)"/>
+    <path d="M80 340 V200" stroke="#1f2044" stroke-width="6" stroke-linecap="round"/>
+    <path d="M80 208 h14" stroke="#1f2044" stroke-width="4" stroke-linecap="round"/>
+    <rect x="71" y="178" width="18" height="28" rx="4" fill="#ffd873" stroke="#1f2044" stroke-width="3"/>
+    <path d="M80 176 v-8" stroke="#1f2044" stroke-width="4" stroke-linecap="round"/>
+
+    <circle cx="560" cy="200" r="55" fill="url(#lampGlow)"/>
+    <path d="M560 340 V220" stroke="#1f2044" stroke-width="6" stroke-linecap="round"/>
+    <path d="M560 228 h-14" stroke="#1f2044" stroke-width="4" stroke-linecap="round"/>
+    <rect x="551" y="198" width="18" height="28" rx="4" fill="#ffd873" stroke="#1f2044" stroke-width="3"/>
+    <path d="M560 196 v-8" stroke="#1f2044" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Brick wall backdrop -->
+  <g opacity="0.55">
+    <path d="M0 300 H640" stroke="#37315e" stroke-width="3"/>
+    <path d="M0 322 H640 M0 344 H640" stroke="#332d57" stroke-width="2"/>
+    <path d="M80 300 V322 M180 300 V322 M280 300 V322 M380 300 V322 M480 300 V322 M580 300 V322" stroke="#332d57" stroke-width="2"/>
+    <path d="M130 322 V344 M230 322 V344 M330 322 V344 M430 322 V344 M530 322 V344" stroke="#332d57" stroke-width="2"/>
+  </g>
+
+  <!-- Cobblestone street -->
+  <rect y="344" width="640" height="136" fill="#4b4560"/>
+  <g fill="none" stroke="#3a3550" stroke-width="2.5">
+    <path d="M20 376 q20 -10 40 0 q20 10 40 0"/>
+    <path d="M100 396 q20 -10 40 0 q20 10 40 0"/>
+    <path d="M200 368 q20 -10 40 0 q20 10 40 0"/>
+    <path d="M290 400 q20 -10 40 0 q20 10 40 0"/>
+    <path d="M380 380 q20 -10 40 0 q20 10 40 0"/>
+    <path d="M470 404 q20 -10 40 0 q20 10 40 0"/>
+    <path d="M540 366 q20 -10 40 0 q20 10 40 0"/>
+  </g>
+
+  <!-- Penny-farthing bicycle -->
+  <g transform="translate(250, 268)">
+    <!-- Big front wheel -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#1f2044" stroke-width="7"/>
+    <circle cx="0" cy="0" r="112" fill="none" stroke="url(#wheelSheen)" stroke-width="2" stroke-dasharray="3 7"/>
+    <g stroke="#b8a266" stroke-width="1.4" opacity="0.85">
+      <path d="M0 -110 V110 M-110 0 H110 M-78 -78 L78 78 M-78 78 L78 -78"/>
+      <path d="M-110 0 L-78 -78 M0 -110 L78 -78 M110 0 L78 78 M0 110 L-78 78"/>
+      <path d="M-110 0 L-78 78 M-78 -78 L0 110 M78 -78 L110 0 M78 78 L0 110"/>
+    </g>
+    <circle cx="0" cy="0" r="9" fill="#d8b56a" stroke="#1f2044" stroke-width="3"/>
+    <!-- Front tire tread marks -->
+    <path d="M-85 -85 A120 120 0 0 1 85 -85" fill="none" stroke="#2e2f5c" stroke-width="9" stroke-dasharray="10 12"/>
+
+    <!-- Small rear wheel -->
+    <g transform="translate(-130, 34)">
+      <circle cx="0" cy="0" r="34" fill="none" stroke="#1f2044" stroke-width="5"/>
+      <g stroke="#b8a266" stroke-width="1.1" opacity="0.85">
+        <path d="M0 -30 V30 M-30 0 H30 M-21 -21 L21 21 M-21 21 L21 -21"/>
+      </g>
+      <circle cx="0" cy="0" r="5" fill="#d8b56a"/>
+    </g>
+
+    <!-- Frame: fork, backbone, cranks -->
+    <g fill="none" stroke="#d8b56a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0 L-8 -96"/>
+      <path d="M-8 -96 Q-30 -130 -78 -118"/>
+      <path d="M-78 -118 L-122 -40"/>
+      <path d="M-122 -40 L-130 0"/>
+      <path d="M-8 -96 L-40 -104"/>
+    </g>
+
+    <!-- Handlebars (moustache style) -->
+    <g fill="none" stroke="#d8b56a" stroke-width="6" stroke-linecap="round">
+      <path d="M-40 -104 Q-52 -130 -44 -140"/>
+      <path d="M-40 -104 Q-28 -128 -36 -138"/>
+    </g>
+    <path d="M-50 -138 Q-44 -146 -38 -142 M-40 -142 Q-34 -150 -28 -144" fill="none" stroke="#8a6f3a" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Saddle -->
+    <path d="M-70 -124 Q-56 -134 -40 -126 Q-54 -118 -70 -124 Z" fill="#7a2f3d"/>
+    <path d="M-56 -122 L-56 -118" stroke="#1f2044" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Crank + pedals on big wheel hub -->
+    <path d="M0 0 L14 22 M0 0 L-14 -22" stroke="#d8b56a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M6 26 h16 M-20 -26 h16" stroke="#1f2044" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Bell -->
+    <path d="M-34 -110 a6 6 0 0 1 12 0 Z" fill="#e8d8b0" stroke="#1f2044" stroke-width="2"/>
+  </g>
+
+  <!-- Pelican astride the penny-farthing -->
+  <g transform="translate(262, 118)">
+    <path d="M-34 -10 Q-54 -20 -50 -34 Q-38 -26 -28 -14 Z" fill="#efe9df" stroke="#c4b9a9" stroke-width="1.5"/>
+    <path d="M-34 4 Q-52 0 -46 -14 Q-36 -8 -28 0 Z" fill="#f7f3ec" stroke="#c4b9a9" stroke-width="1.5"/>
+
+    <ellipse cx="0" cy="0" rx="42" ry="29" fill="#fdf9f4" stroke="#c4b9a9" stroke-width="2"/>
+
+    <!-- Wing draped over handlebar grip -->
+    <path d="M6 -10 Q30 -30 40 -52 Q46 -58 40 -62 Q26 -46 12 -28 Q4 -18 6 -10 Z" fill="#ffffff" stroke="#c4b9a9" stroke-width="1.5"/>
+    <path d="M14 -24 Q30 -40 38 -52" fill="none" stroke="#d8cec0" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Legs straddling the frame -->
+    <g fill="none" stroke="#f39c2b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-14 20 Q-44 34 -60 52"/>
+      <path d="M12 22 Q30 38 44 56"/>
+    </g>
+    <path d="M-60 52 l-10 6 M44 56 l12 5" stroke="#f39c2b" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Neck rising to the handlebars -->
+    <path d="M26 -16 Q46 -30 42 -62 Q40 -72 28 -62 Q34 -36 18 -20 Z" fill="#faf6ef" stroke="#c4b9a9" stroke-width="2"/>
+
+    <ellipse cx="36" cy="-70" rx="17" ry="14" fill="#ffffff" stroke="#c4b9a9" stroke-width="2"/>
+
+    <!-- Beak -->
+    <path d="M51 -74 Q82 -70 94 -74 Q82 -67 51 -62 Z" fill="#f9b233" stroke="#d18a1c" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M51 -62 Q80 -61 90 -66 Q86 -50 62 -47 Q51 -50 48 -57 Z" fill="#ffcf7d" stroke="#d18a1c" stroke-width="1.8" stroke-linejoin="round"/>
+
+    <circle cx="47" cy="-76" r="3.8" fill="#2e2a26"/>
+    <circle cx="48.2" cy="-77.2" r="1.3" fill="#ffffff"/>
+
+    <path d="M22 -82 Q26 -90 32 -84" fill="none" stroke="#d8cec0" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Lantern light streaks -->
+  <g stroke="#ffe9a3" stroke-width="2" stroke-linecap="round" opacity="0.35">
+    <path d="M96 210 L140 250"/>
+    <path d="M104 236 L150 272"/>
+    <path d="M544 230 L500 268"/>
+    <path d="M536 206 L492 244"/>
+  </g>
+
+  <!-- Moths around lamp -->
+  <g fill="#fdf3d0" opacity="0.85">
+    <circle cx="110" cy="180" r="2.6"/>
+    <circle cx="98" cy="212" r="2.2"/>
+    <circle cx="540" cy="196" r="2.4"/>
+    <circle cx="552" cy="222" r="2"/>
+  </g>
+</svg>
